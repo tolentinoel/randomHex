@@ -1,0 +1,24 @@
+#toggleBtn{
+    margin-top: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 35px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(30, 3, 73);
+    background-color: #f8c621;
+    text-transform: uppercase;
+    box-shadow: 0px 9px 0px 0px #a48b00;
+}
+
+#toggleBtn:hover{
+    cursor: pointer;
+    background-color: #dfb21e;
+}
+
+#toggleBtn:active {
+    transform: translate(0px, 5px);
+    box-shadow: 0 0 0 0 black;
+
+ }
