@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  ;
+  
 }
 
 .dayMode {
@@ -9,9 +9,12 @@
 }
 
 .nightMode {
-  background-color: #161c29;
+  background-color: #111e39;
   height: 100vh;
-
+  color: aliceblue;
 }
 
+.mainDiv{
+  padding: 80px 50px;
+}
 

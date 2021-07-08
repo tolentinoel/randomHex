@@ -20,12 +20,12 @@ function DarkMode() {
 
 
     return (
-        <div>
+        <div className="mainDiv">
             <button
                 id="toggleBtn"
                 onClick={(e) => btnToggle(e)}
             >DAY MODE</button>
-            <p>{bgColor}</p>
+            <h1>{bgColor === "dayMode" ? "Good Morning!" : "Good Evening!"}</h1>
         </div>
     )
 }
