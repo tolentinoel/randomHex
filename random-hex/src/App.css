@@ -1,0 +1,20 @@
+.App {
+  text-align: center;
+  
+}
+
+.dayMode {
+  background-color: #8eb2f9;
+  height: 100vh
+}
+
+.nightMode {
+  background-color: #111e39;
+  height: 100vh;
+  color: aliceblue;
+}
+
+.mainDiv{
+  padding: 80px 50px;
+}
+
