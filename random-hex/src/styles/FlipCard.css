@@ -1,6 +1,7 @@
 .container{
     perspective: 800px;
     display: flex;
+    cursor: pointer;
 }
 
 .flipCard {
