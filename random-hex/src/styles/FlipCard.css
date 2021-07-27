@@ -1,4 +1,22 @@
-.front, .back {
+.container{
+    perspective: 800px;
+    display: flex;
+}
+
+.flipCard {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 21px;
+    transition: transform .4s;
+    transform-style: preserve-3d;
+  }
+
+.container.flip .flipCard {
+    transform: rotateY(180deg);
+}
+
+.front, .back{
     box-shadow:  3px 5px 9px 1px #663260;
     position: absolute;
     width: 100%;
