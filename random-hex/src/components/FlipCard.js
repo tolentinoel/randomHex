@@ -4,7 +4,7 @@ import '../styles/FlipCard.css';
 class FlipCard extends Component {
 
     handleClick = (e) => {
-        console.log(e.target)
+        console.log(e.target) 
     }
 
     render() {
