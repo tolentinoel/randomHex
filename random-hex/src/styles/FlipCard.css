@@ -40,14 +40,14 @@
   }
 
   .back{
-      background-color: rgb(75, 98, 104);
+      background-color: black;
       transform: rotateY(180deg);
   }
 
   .front{
       width: inherit;
       height: inherit;
-      background-color: rgb(46, 119, 146);
+      background-color: blue;
   }
 
   img {
