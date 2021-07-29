@@ -4,7 +4,6 @@ import '../styles/FlipCard.css';
 class FlipCard extends Component {
 
     handleClick = (e) => {
-
     let container = e.target.parentNode.parentNode.className
     if (container === "container"  ) {
         document.querySelector('.container').classList.toggle('flip')
