@@ -1,13 +1,21 @@
 .container{
-    perspective: 800px;
+    perspective: 1000px;
     display: flex;
     cursor: pointer;
+    justify-content: space-evenly;
+}
+
+.container2{
+    perspective: 1000px;
+    display: flex;
+    cursor: pointer;
+    justify-content: space-evenly;
 }
 
 .flipCard {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 30vw;
+    height: 40vh;
     border-radius: 21px;
     transition: transform .4s;
     transform-style: preserve-3d;
@@ -17,13 +25,31 @@
     transform: rotateY(180deg);
 }
 
+.container2.flip .flipCard {
+    transform: rotateY(180deg);
+}
+
 .front, .back{
-    box-shadow:  3px 5px 9px 1px #ffffff;
     position: absolute;
-    width: 32%;
     border-radius: 21px;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .back{
+      background-color: black;
+      transform: rotateY(180deg);
+  }
+
+  .front{
+      width: inherit;
+      height: inherit;
+      background-color: blue;
+  }
+
+  img {
+      width: 100%;
   }
