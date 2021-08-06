@@ -5,16 +5,16 @@
 
 .dayMode {
   background-color: #8eb2f9;
-  height: 100vh
+  height: auto;
 }
 
 .nightMode {
   background-color: #111e39;
-  height: 100vh;
+  height: auto;
   color: aliceblue;
 }
 
-.mainDiv{
-  padding: 80px 50px;
+.mainDiv {
+  padding: 45px 50px;
 }
 

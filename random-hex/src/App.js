@@ -1,6 +1,7 @@
 import './App.css';
 import DarkMode from './components/DarkMode';
 import FlipCard from './components/FlipCard';
+import Page from './components/Page';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <header className="dayMode">
       <DarkMode />
       <FlipCard />
+      <Page />
       </header>
     </div>
   );

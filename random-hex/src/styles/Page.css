@@ -1,0 +1,13 @@
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.galleryPic{
+    width: 200px;
+    background-color: #363e5b;
+    border-radius: 12px;
+}
