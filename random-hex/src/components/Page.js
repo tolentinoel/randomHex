@@ -38,6 +38,54 @@ class Page extends Component {
             { id: 8,
             url: "https://cdn3.iconfinder.com/data/icons/fantasy-and-role-play-game-adventure-quest/512/Villager-256.png",
             alt: "Fantasy icon from iconfinder"
+            },
+            { id: 9,
+            url: "https://cdn3.iconfinder.com/data/icons/fantasy-and-role-play-game-adventure-quest/512/Werewolf-256.png",
+            alt: "Fantasy icon from iconfinder"
+            },
+            { id: 10,
+            url: "https://cdn3.iconfinder.com/data/icons/fantasy-and-role-play-game-adventure-quest/512/Grim_Reaper-256.png",
+            alt: "Fantasy icon from iconfinder"
+            },
+            { id: 11,
+            url: "https://cdn3.iconfinder.com/data/icons/fantasy-and-role-play-game-adventure-quest/512/Elf-256.png",
+            alt: "Fantasy icon from iconfinder"
+            },
+            { id: 12,
+            url: "https://cdn3.iconfinder.com/data/icons/fantasy-and-role-play-game-adventure-quest/512/Destructive_Magic-256.png",
+            alt: "Fantasy icon from iconfinder"
+            },
+            { id: 13,
+            url: "https://cdn3.iconfinder.com/data/icons/fantasy-and-role-play-game-adventure-quest/512/Unicorn-256.png",
+            alt: "Fantasy icon from iconfinder"
+            },
+            { id: 14,
+            url: "https://cdn3.iconfinder.com/data/icons/fantasy-and-role-play-game-adventure-quest/512/Spell_Scroll-256.png",
+            alt: "Fantasy icon from iconfinder"
+            },
+            { id: 15,
+            url: "https://cdn3.iconfinder.com/data/icons/fantasy-and-role-play-game-adventure-quest/512/Centaur-256.png",
+            alt: "Fantasy icon from iconfinder"
+            },
+            { id: 16,
+            url: "https://cdn3.iconfinder.com/data/icons/fantasy-and-role-play-game-adventure-quest/512/Sorceress-256.png",
+            alt: "Fantasy icon from iconfinder"
+            },
+            { id: 17,
+            url: "https://cdn3.iconfinder.com/data/icons/fantasy-and-role-play-game-adventure-quest/512/Helmet.jpg-256.png",
+            alt: "Fantasy icon from iconfinder"
+            },
+            { id: 18,
+            url: "https://cdn3.iconfinder.com/data/icons/fantasy-and-role-play-game-adventure-quest/512/King-256.png",
+            alt: "Fantasy icon from iconfinder"
+            },
+            { id: 19,
+            url: "https://cdn3.iconfinder.com/data/icons/fantasy-and-role-play-game-adventure-quest/512/Orc-256.png",
+            alt: "Fantasy icon from iconfinder"
+            },
+            { id: 20,
+            url: "https://cdn3.iconfinder.com/data/icons/fantasy-and-role-play-game-adventure-quest/512/Adventure_Map-256.png",
+            alt: "Fantasy icon from iconfinder"
             }
 
         ]
