@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../styles/Page.css';
 
 
+
 class Page extends Component {
 
     render() {
@@ -90,10 +91,22 @@ class Page extends Component {
 
         ]
 
+        const mappingHiRes = () => {
+            let i = 1
+            let images = []
+            while (i < 23){
+                let num = `/hiRes/${i}.JPG`
+                images.push(num)
+                i++;
+            }
+            return images
+
+        }
 
         return (
-            <div className="gallery">
-                {links.map(pic => <img className="galleryPic" src={pic.url} alt={pic.alt} key={links.indexOf(pic)} />)}
+            <div id="gallery">
+                {mappingHiRes().map(path => <img className="boatPics" src={process.env.PUBLIC_URL + path} alt="photos from boat trip" />)}
+                {links.map(pic => <img className="galleryPics" src={pic.url} alt={pic.alt} key={links.indexOf(pic)} />)}
             </div>
         );
     }
