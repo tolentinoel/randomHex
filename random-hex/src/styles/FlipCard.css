@@ -29,7 +29,7 @@
     transform-style: preserve-3d;
   }
 
-.container.flip .flipCard {
+.container1.flip .flipCard {
     transform: rotateY(180deg);
 }
 
@@ -58,9 +58,9 @@
     background-color: #def0ff;
 }
 
-img {
+/* img {
     width: 86%;
-}
+} */
 
 
 .nightMode .front{

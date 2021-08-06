@@ -5,8 +5,8 @@ class FlipCard extends Component {
 
     handleClick = (e) => {
     let container = e.target.parentNode.parentNode.className
-    if (container === "container"  ) {
-        document.querySelector('.container').classList.toggle('flip')
+    if (container === "container1"  ) {
+        document.querySelector('.container1').classList.toggle('flip')
         } else if (container === "container2") {
             document.querySelector('.container2').classList.toggle('flip')
         } else if (container === "flipCard") {
