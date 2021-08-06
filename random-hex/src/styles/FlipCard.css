@@ -1,3 +1,10 @@
+.mainContainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
 .container{
     perspective: 1000px;
     display: flex;
@@ -14,8 +21,8 @@
 
 .flipCard {
     position: relative;
-    width: 30vw;
-    height: 40vh;
+    width: 350px;
+    height: 300px;
     border-radius: 21px;
     transition: transform .4s;
     transform-style: preserve-3d;
@@ -47,9 +54,15 @@
   .front{
       width: inherit;
       height: inherit;
-      background-color: rgb(0, 48, 54);
+      background-color: #def0ff;
   }
 
   img {
-      width: 100%;
+      width: 90%;
   }
+
+
+  .nightMode .front{
+      background-color: #305f71;
+  }
+
