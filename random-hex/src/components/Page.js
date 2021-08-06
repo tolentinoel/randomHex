@@ -97,6 +97,7 @@ class Page extends Component {
 
         ]
 
+
         const mappingHiRes = () => {
             let i = 1
             let images = []
@@ -110,16 +111,17 @@ class Page extends Component {
 
 
 
-        const sliceArray = (arr, tab) => {
+        const sliceArray = (tab) => {
+
 
             switch (tab) {
                case "3" :
                     return (
-                        arr.slice(0, arr.length/2).map(path => <img className="boatPics" src={process.env.PUBLIC_URL + path} alt="photos from boat trip" key={path} width="275" height="206"/>)
+                        mappingHiRes().slice(0, mappingHiRes().length/2).map(path => <img className="boatPics" src={process.env.PUBLIC_URL + path} alt="photos from boat trip" key={path} width="275" height="206"/>)
                     );
                 case "4" :
                     return (
-                        arr.slice(arr.length/2, arr.length).map(path => <img className="boatPics" src={process.env.PUBLIC_URL + path} alt="photos from boat trip" key={path} width="275" height="206"/>)
+                        mappingHiRes().slice(mappingHiRes().length/2, mappingHiRes().length).map(path => <img className="boatPics" src={process.env.PUBLIC_URL + path} alt="photos from boat trip" key={path} width="275" height="206"/>)
                     )
 
                 default:
@@ -135,6 +137,7 @@ class Page extends Component {
         return (
             <>
                  <div id="gallery">
+
                     <Tabs
                     className="justify-content-center"
                     activeKey={this.state.tabKey}
@@ -150,11 +153,13 @@ class Page extends Component {
                         </Tab>
                         <Tab eventKey="3" title="3" className="photoTabs">
                             <h1>3</h1>
-                            {sliceArray(mappingHiRes(), this.state.tabKey)}
+
+                            {sliceArray(this.state.tabKey)}
                         </Tab>
                         <Tab eventKey="4" title="4" className="photoTabs">
                             <h1>4</h1>
-                            {sliceArray(mappingHiRes(), this.state.tabKey)}
+
+                            {sliceArray(this.state.tabKey)}
                         </Tab>
 
                     </Tabs>
