@@ -105,7 +105,9 @@ class Page extends Component {
 
         return (
             <div id="gallery">
-                {mappingHiRes().map(path => <img className="boatPics" src={process.env.PUBLIC_URL + path} alt="photos from boat trip" />)}
+               
+
+                {mappingHiRes().map(path => <img className="boatPics" src={process.env.PUBLIC_URL + path} alt="photos from boat trip" key={path} />)}
                 {links.map(pic => <img className="galleryPics" src={pic.url} alt={pic.alt} key={links.indexOf(pic)} />)}
             </div>
         );

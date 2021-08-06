@@ -17,7 +17,7 @@ class FlipCard extends Component {
     render() {
         return (
             <div className="mainContainer">
-                <div className="container" onClick={(e) => this.handleClick(e)}>
+                <div className="container1" onClick={(e) => this.handleClick(e)}>
                     <div className="flipCard">
                         <div className="front"> <h4>FRONT</h4></div>
                         <div className="back"><img id="jester" src="https://cdn3.iconfinder.com/data/icons/fantasy-and-role-play-game-adventure-quest/512/Fairy-1024.png" alt="jester hat" width="400" /></div>

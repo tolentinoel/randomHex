@@ -1,4 +1,5 @@
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import DarkMode from './components/DarkMode';
 import FlipCard from './components/FlipCard';
 import Page from './components/Page';

@@ -8,7 +8,7 @@
 }
 
 .galleryPics{
-    width: 200px;
+    width: 225px;
     background-color: #363e5b;
     border-radius: 12px;
     cursor: pointer;
@@ -16,7 +16,7 @@
 }
 
 .boatPics{
-    width: 300px;
+    width: 275px;
     background-color: #363e5b;
     border-radius: 12px;
     cursor: pointer;
