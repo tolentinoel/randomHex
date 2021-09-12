@@ -1,13 +1,32 @@
-.gallery{
+#gallery{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    grid-gap: 15px;
+    gap: 15px;
+    
 }
 
-.galleryPic{
-    width: 200px;
+.galleryPics{
+    width: 225px;
     background-color: #363e5b;
     border-radius: 12px;
+    cursor: pointer;
+    margin: 8px;
+}
+
+.boatPics{
+    aspect-ratio: attr(width) / attr(height);
+    background-color: #363e5b;
+    border-radius: 12px;
+    cursor: pointer;
+    margin: 8px;
+}
+
+.photoTabs{
+    gap: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }

@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
 import '../styles/Page.css';
+import { Tabs, Tab } from 'react-bootstrap';
 
 
 class Page extends Component {
+
+    state = {
+        tabKey: "1",
+        picArray: []
+    }
+
 
     render() {
 
@@ -91,10 +98,74 @@ class Page extends Component {
         ]
 
 
+        const mappingHiRes = () => {
+            let i = 1
+            let images = []
+            while (i < 23){
+                let num = `/hiRes/${i}.JPG`
+                images.push(num)
+                i++;
+            }
+            return images
+        }
+
+
+
+        const sliceArray = (tab) => {
+
+
+            switch (tab) {
+               case "3" :
+                    return (
+                        mappingHiRes().slice(0, mappingHiRes().length/2).map(path => <img className="boatPics" src={process.env.PUBLIC_URL + path} alt="photos from boat trip" key={path} width="275" height="206"/>)
+                    );
+                case "4" :
+                    return (
+                        mappingHiRes().slice(mappingHiRes().length/2, mappingHiRes().length).map(path => <img className="boatPics" src={process.env.PUBLIC_URL + path} alt="photos from boat trip" key={path} width="275" height="206"/>)
+                    )
+
+                default:
+                    return(
+                        <h2>LOADING..</h2>
+                    )
+
+            }
+        }
+
+
+
         return (
-            <div className="gallery">
-                {links.map(pic => <img className="galleryPic" src={pic.url} alt={pic.alt} key={links.indexOf(pic)} />)}
-            </div>
+            <>
+                 <div id="gallery">
+
+                    <Tabs
+                    className="justify-content-center"
+                    activeKey={this.state.tabKey}
+                    onSelect={(k) => this.setState({tabKey: k})}
+                    >
+                        <Tab eventKey="1" title="1" className="photoTabs">
+                            <h1>1</h1>
+                            {links.slice(0, links.length/2).map(pic => <img className="galleryPics" src={pic.url} alt={pic.alt} key={links.indexOf(pic)} />)}
+                        </Tab>
+                        <Tab eventKey="2" title="2" className="photoTabs">
+                            <h1>2</h1>
+                            {links.slice(links.length/2, links.length).map(pic => <img className="galleryPics" src={pic.url} alt={pic.alt} key={links.indexOf(pic)} />)}
+                        </Tab>
+                        <Tab eventKey="3" title="3" className="photoTabs">
+                            <h1>3</h1>
+
+                            {sliceArray(this.state.tabKey)}
+                        </Tab>
+                        <Tab eventKey="4" title="4" className="photoTabs">
+                            <h1>4</h1>
+
+                            {sliceArray(this.state.tabKey)}
+                        </Tab>
+
+                    </Tabs>
+                </div>
+
+            </>
         );
     }
 }
