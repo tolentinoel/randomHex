@@ -38,6 +38,7 @@
 }
 
 .front, .back{
+
     position: absolute;
     border-radius: 21px;
     -webkit-backface-visibility: hidden;
@@ -48,6 +49,8 @@
   }
 
 .back{
+    width: inherit;
+    height: inherit;
     background-color: rgb(109, 122, 138);
     transform: rotateY(180deg);
 }
@@ -58,9 +61,6 @@
     background-color: #def0ff;
 }
 
-/* img {
-    width: 86%;
-} */
 
 
 .nightMode .front{

@@ -22,3 +22,15 @@
   align-items: center;
 }
 
+a {
+  text-decoration: none !important;
+}
+
+.brand-logo{
+  left: 20px!important;
+}
+
+#logo{
+  font-size: 50px;
+  /* margin: 10px; */
+}

@@ -19,14 +19,14 @@ class FlipCard extends Component {
             <div className="mainContainer">
                 <div className="container1" onClick={(e) => this.handleClick(e)}>
                     <div className="flipCard">
-                        <div className="front"> <h4>FRONT</h4></div>
+                        <div className="front"> <h4>Click me to see what's behind!</h4></div>
                         <div className="back"><img id="jester" src="https://cdn3.iconfinder.com/data/icons/fantasy-and-role-play-game-adventure-quest/512/Fairy-1024.png" alt="jester hat" width="400" /></div>
                     </div>
                 </div>
 
                 <div className="container2" onClick={(e) => this.handleClick(e)}>
                     <div className="flipCard">
-                        <div className="front"> <h4>FRONT</h4></div>
+                        <div className="front"> <h4>Click me to see what's behind!</h4></div>
                         <div className="back"><img id="jester" src="https://cdn3.iconfinder.com/data/icons/fantasy-and-role-play-game-adventure-quest/512/Knight-1024.png" alt="jester hat" width="400" /></div>
                     </div>
                 </div>
